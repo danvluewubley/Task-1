@@ -21,6 +21,7 @@ def do_POST(self):
 
 
 server = HTTPServer((HOST, PORT), NeuralHTTP)
+print("Website: " + str(HOST) + ":" + str(PORT))
 print("Server now running...")
 server.serve_forever()
 server.server_close()
